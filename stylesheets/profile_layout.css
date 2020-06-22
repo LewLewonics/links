@@ -162,7 +162,6 @@ nav ul .menu {
   color: #E0FBFC;
   border-left: 2px solid #E0FBFC;
   border-right: 2px solid #E0FBFC;
-  border-bottom: 1px solid #E0FBFC;
   padding: 10px;
   text-align: center;
 }
@@ -173,6 +172,10 @@ nav ul .menu {
 
 .link-container .category .category-links.active a:hover {
   color: #98C1D9;
+}
+
+.category:last-child .category-links.active {
+  border-bottom: 2px solid #E0FBFC;
 }
 
 footer {
