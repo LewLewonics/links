@@ -181,6 +181,7 @@ nav ul .menu {
 
 .category:last-child .category-links.active {
   border-bottom: 2px solid #E0FBFC;
+  margin-bottom: 20px;
 }
 
 footer {
