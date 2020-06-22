@@ -57,6 +57,7 @@ nav ul .menu {
 }
 
 .profile-info p {
+  font-size: 0.8em;
   margin-left: 50px;
   padding: 20px;
   background: #3D5A80;
@@ -93,7 +94,7 @@ nav ul .menu {
   border: none;
   border-radius: 5px;
   color: #E0FBFC;
-  background-color: #98C1D9;
+  background-color: #3D5A80;
 }
 
 .link-container button:hover {
@@ -168,10 +169,14 @@ nav ul .menu {
 
 .link-container .category .category-links.active a {
   display: block;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .link-container .category .category-links.active a:hover {
   color: #98C1D9;
+  text-decoration: underline;
 }
 
 .category:last-child .category-links.active {

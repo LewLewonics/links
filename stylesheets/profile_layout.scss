@@ -53,6 +53,7 @@ nav {
         }
     }
     p {
+        font-size: 0.8em;
         margin-left: 50px;
         padding: 20px;
         background: $bioColor;
@@ -79,7 +80,7 @@ nav {
         border: none;
         border-radius: 5px;
         color: $categorySecondaryColor;
-        background-color: $categoryColor;
+        background-color: $bioColor;
     }
 
     button:hover {
@@ -134,10 +135,13 @@ nav {
             text-align: center;
             a {
                 display: block;
+                text-decoration: none;
+                transition: all .3s;
             }
     
             a:hover {
                 color: $categoryColor;
+                text-decoration: underline;
             }
         }
     }
@@ -154,5 +158,3 @@ footer {
     text-align: center;
     bottom: 0;
 }
-
-
