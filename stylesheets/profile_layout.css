@@ -87,7 +87,7 @@ nav ul .menu {
 .link-container button.edit-save {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-right: 1em;
+  margin-right: 20px;
   padding: 5px 10px;
   outline: none;
   border: none;
