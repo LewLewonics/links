@@ -225,16 +225,16 @@ nav {
     }
 }
 
-.category:last-child .category-links.active {
+.category:last-of-type .category-links.active {
     border-bottom: 2px solid $categorySecondaryColor;
     padding-bottom: 30px;
     margin-bottom: 20px;
 }
 
-footer {
-    position: absolute;
-    background: $bioColor;
-    width: 800px;
-    text-align: center;
-    bottom: 0;
-}
+// footer {
+//     position: absolute;
+//     background: $bioColor;
+//     width: 800px;
+//     text-align: center;
+//     bottom: 0;
+// }

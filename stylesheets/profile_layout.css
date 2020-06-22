@@ -272,17 +272,9 @@ nav ul .fa {
   cursor: pointer;
 }
 
-.category:last-child .category-links.active {
+.category:last-of-type .category-links.active {
   border-bottom: 2px solid #E0FBFC;
   padding-bottom: 30px;
   margin-bottom: 20px;
-}
-
-footer {
-  position: absolute;
-  background: #3D5A80;
-  width: 800px;
-  text-align: center;
-  bottom: 0;
 }
 /*# sourceMappingURL=profile_layout.css.map */
