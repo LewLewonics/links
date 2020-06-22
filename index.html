@@ -8,58 +8,63 @@
     <title>Blank's profile</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class='main-page'><a href="#">Main Page</a></li>
-            <li class='menu'><a href="#">Settings</a></li>
-        </ul>
-    </nav>
-    
-    <section class="profile-info">
-        <section class="profile-container">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteamcdn-a.akamaihd.net%2Fsteamcommunity%2Fpublic%2Fimages%2Favatars%2F99%2F99561c9826f3e58d3e02fb4d026ef82e0d67287c_full.jpg&f=1&nofb=1" alt="" class="profile-pic">
-            <h3 class="user-name">Lewlew</h3>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class='main-page'><a href="#"><i class="fa fa-home"></i></a></li>
+                <li class='menu'><a href="#"><i class="fa fa-cog"></i></a></li>
+            </ul>
+        </nav>
+        
+        <section class="profile-info">
+            <section class="profile-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.discordapp.net%2Favatars%2F388823187246546948%2F21f39dc26efe466ce4b751839c017289.png%3Fsize%3D512&f=1&nofb=1" alt="" class="profile-pic">
+                <h3 class="user-name">Lewlew</h3>
+            </section>
+        
+            <p class="bio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo rerum beatae doloremque accusantium perferendis harum molestiae fugiat similique ad consequatur eum. Voluptatem obcaecati ratione explicabo molestias culpa vel corrupti.
+            </p>
         </section>
     
-        <p class="bio">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo rerum beatae doloremque accusantium perferendis harum molestiae fugiat similique ad consequatur eum. Voluptatem obcaecati ratione explicabo molestias culpa vel corrupti.
-        </p>
-    </section>
-
-    <section class="link-container">
-        <h1>Links</h1>
-        <button class="edit-save" id="edit-save">Edit</button>
-        
-        <div class="category">    
-            <div class="category-button" id="category-button">
-                <h3 class="category-name">Social Media</h3>
-                <i class="fa fa-angle-down"></i>
-            </div>
-
-            <div class="category-links" id='category-links'>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </div>
-         </div>
+        <section class="link-container">
+            <h1>Links</h1>
+            <button class="edit-save" id="edit-save">Edit</button>
+            
+            <div class="category">    
+                <div class="category-button" id="category-button">
+                    <h3 class="category-name">Social Media</h3>
+                    <i class="fa fa-angle-down"></i>
+                    <i class="fa fa-trash"></i>
+                </div>
     
-         <div class="category">    
-            <div class="category-button" id="category-button">
-                <h3 class="category-name">Wallpapers</h3>
-                <i class="fa fa-angle-down"></i>
-            </div>
-
-            <div class="category-links" id='category-links'>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </div>
-         </div>
-    </section>
-
+                <div class="category-links" id='category-links'>
+                    <div class='link'><a href="#">Link</a> <span class='del-link'>-</span></div>
+                    <div class='link'><a href="#">Link</a> <span class='del-link'>-</span></div>
+                    <div class='link'><a href="#">Link</a> <span class='del-link'>-</span></div>
+                    <p class="add-link">+</p>
+                </div>
+             </div>
+        
+             <div class="category">    
+                <div class="category-button" id="category-button">
+                    <h3 class="category-name">Wallpapers</h3>
+                    <i class="fa fa-angle-down"></i>
+                    <i class="fa fa-trash"></i>
+                </div>
+    
+                <div class="category-links" id='category-links'>
+                    <div class='link'><a href="#">Link</a> <span class='del-link'>-</span></div>
+                    <div class='link'><a href="#">Link</a> <span class='del-link'>-</span></div>
+                    <div class='link'><a href="#">Link</a> <span class='del-link'>-</span></div>
+                    <p class="add-link">+</p>
+                </div>
+    
+                <p class="add-category" id="add-category">+</p>
+             </div>
+        </section>
+    
+    </div>
     <script src='js/profile.js'></script>
 </body>
 </html>
