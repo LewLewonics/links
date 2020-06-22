@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #293241;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul .main-page {
+  position: absolute;
+  left: 0;
+}
+
+nav ul .menu {
+  position: absolute;
+  right: 20px;
+}
+
+.profile-info {
+  margin: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-info .profile-container {
+  text-align: center;
+}
+
+.profile-info .profile-container img {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.profile-info p {
+  margin-left: 50px;
+  padding: 20px;
+  background: #3D5A80;
+  border-radius: 6px;
+}
+
+.link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-container h1 {
+  font-size: 3em;
+  margin: 10px 0 30px 0;
+}
+
+.link-container button.edit-save {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 1em;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #E0FBFC;
+  background-color: #98C1D9;
+}
+
+.link-container button:hover {
+  cursor: pointer;
+  background: #E0FBFC;
+  color: #98C1D9;
+}
+
+.link-container .category {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-container .category-button {
+  margin-top: 20px;
+  position: relative;
+  background: #98C1D9;
+  padding: 5px 0;
+  width: 20em;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.link-container .category-button:hover {
+  cursor: pointer;
+}
+
+.link-container .category-button i {
+  position: absolute;
+  right: 10px;
+  font-size: 1.2em;
+}
+
+.link-container .category-links {
+  display: none;
+}
+
+.link-container .category-links.active {
+  line-height: 1.5em;
+  width: 20em;
+  margin-top: 10px;
+  display: block;
+  color: #E0FBFC;
+  border-left: 2px solid #E0FBFC;
+  border-right: 2px solid #E0FBFC;
+  border-bottom: 1px solid #E0FBFC;
+  padding: 10px;
+  text-align: center;
+}
+
+.link-container .category-links.active a {
+  display: block;
+}
+
+.link-container .category-links.active a:hover {
+  color: #98C1D9;
+}
+
+footer {
+  position: absolute;
+  background: #3D5A80;
+  width: 800px;
+  text-align: center;
+  bottom: 0;
+}
+/*# sourceMappingURL=profile_layout.css.map */
