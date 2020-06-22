@@ -87,6 +87,8 @@ nav ul .fa {
   padding: 20px;
   background: #3D5A80;
   border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
 .link-container {

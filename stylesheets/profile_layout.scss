@@ -77,6 +77,8 @@ nav {
         padding: 20px;
         background: $bioColor;
         border-radius: 6px;
+        max-height: 150px;
+        overflow-y: auto;
     }
 }
 
