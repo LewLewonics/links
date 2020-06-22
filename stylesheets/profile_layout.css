@@ -119,7 +119,11 @@ nav ul .menu {
           align-items: center;
 }
 
-.link-container .category-button {
+.link-container .category .category-button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin-top: 20px;
   position: relative;
   background: #98C1D9;
@@ -136,21 +140,21 @@ nav ul .menu {
           justify-content: center;
 }
 
-.link-container .category-button:hover {
+.link-container .category .category-button:hover {
   cursor: pointer;
 }
 
-.link-container .category-button i {
+.link-container .category .category-button i {
   position: absolute;
   right: 10px;
   font-size: 1.2em;
 }
 
-.link-container .category-links {
+.link-container .category .category-links {
   display: none;
 }
 
-.link-container .category-links.active {
+.link-container .category .category-links.active {
   line-height: 1.5em;
   width: 20em;
   margin-top: 10px;
@@ -163,11 +167,11 @@ nav ul .menu {
   text-align: center;
 }
 
-.link-container .category-links.active a {
+.link-container .category .category-links.active a {
   display: block;
 }
 
-.link-container .category-links.active a:hover {
+.link-container .category .category-links.active a:hover {
   color: #98C1D9;
 }
 

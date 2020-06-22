@@ -94,51 +94,52 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .category-button {
-        margin-top: 20px;
-        position: relative;
-        background: $categoryColor;
-        padding: 5px 0;
-        width: 20em;
-        align-self: center;
-        text-align: center;
-        display: flex;
-        justify-content: center;
         
-        &:hover {
-            cursor: pointer;
-        }   
-
-        i {
-            position: absolute;
-            right: 10px;
-            font-size: 1.2em;
+        .category-button {
+            user-select: none;
+            margin-top: 20px;
+            position: relative;
+            background: $categoryColor;
+            padding: 5px 0;
+            width: 20em;
+            align-self: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            
+            &:hover {
+                cursor: pointer;
+            }   
+    
+            i {
+                position: absolute;
+                right: 10px;
+                font-size: 1.2em;
+            }
         }
-    }
 
-    .category-links {
-        display: none;
-    }
-
-    .category-links.active {
-        line-height: 1.5em;
-        width: 20em;
-        margin-top: 10px;
-        display: block;
-        color: $categorySecondaryColor; 
-        border-left: 2px solid $categorySecondaryColor;
-        border-right: 2px solid $categorySecondaryColor;
-        border-bottom: 1px solid $categorySecondaryColor;
-        padding: 10px;
-        text-align: center;
-        a {
+        .category-links {
+            display: none;
+        }
+    
+        .category-links.active {
+            line-height: 1.5em;
+            width: 20em;
+            margin-top: 10px;
             display: block;
-        }
-
-        a:hover {
-            color: $categoryColor;
+            color: $categorySecondaryColor; 
+            border-left: 2px solid $categorySecondaryColor;
+            border-right: 2px solid $categorySecondaryColor;
+            border-bottom: 1px solid $categorySecondaryColor;
+            padding: 10px;
+            text-align: center;
+            a {
+                display: block;
+            }
+    
+            a:hover {
+                color: $categoryColor;
+            }
         }
     }
 }
