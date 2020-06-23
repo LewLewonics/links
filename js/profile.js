@@ -7,6 +7,9 @@ const trash = document.querySelectorAll('.fa-trash');
 const modal = document.getElementById('modal');
 const close_modal = document.getElementById('close');
 const modal_content = document.getElementById('modal-content');
+const side_bar = document.getElementById('side-bar');
+const settings_btn = document.getElementById('settings');
+const close_settings = document.getElementById('close-settings');
 
 let edit_mode = false;
 
@@ -102,6 +105,7 @@ add_category.addEventListener('click', () => {
     `
     //Request to database to add new information
 })
+
 //Delete Category (Show Yes or No modal)
 trash.forEach(icon => {
     icon.addEventListener('click', (e) => {
@@ -120,3 +124,9 @@ trash.forEach(icon => {
 window.addEventListener('click', e => e.target == modal ? modal.classList.remove('active') : false );
 //Close Modal on Btn
 close_modal.addEventListener('click', () => modal.classList.remove('active'));
+
+//Open Settings 
+settings_btn.addEventListener('click', () => side_bar.classList.toggle('active'));
+
+//Close settings
+close_settings.addEventListener('click', () => side_bar.classList.remove('active'));

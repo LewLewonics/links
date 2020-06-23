@@ -66,6 +66,96 @@ nav ul .fa {
   font-size: 1.3em;
 }
 
+.side-bar.active {
+  display: block;
+}
+
+.side-bar {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 300px;
+  height: 100vh;
+  background: #98C1D9;
+  color: White;
+  z-index: 100;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.side-bar .top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.side-bar .top h1 {
+  text-align: center;
+}
+
+.side-bar .top i {
+  font-size: 1.3em;
+  position: absolute;
+  right: 10px;
+}
+
+.side-bar .top i:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.side-bar h3 {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.side-bar .bio-container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-bar .bio-container textarea {
+  padding: 10px;
+  font-size: 0.8em;
+  width: 100%;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  height: 150px;
+  overflow: auto;
+}
+
+.side-bar button {
+  outline: none;
+  background: #3D5A80;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
 .profile-info {
   margin: 15px 20px;
   display: -webkit-box;
