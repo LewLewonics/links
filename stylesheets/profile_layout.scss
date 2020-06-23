@@ -2,7 +2,7 @@
 
 $backgroundColor: #293241;
 $bioColor: #3D5A80;
-$categoryColor: #98C1D9;
+$categoryColor: $bioColor;
 $categorySecondaryColor: #E0FBFC;
 $modal-duration: .5s;
 
@@ -28,6 +28,7 @@ button {
 
 .container {
     max-width: 600px;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.4), -30px 0px 40px rgba(0,0,0,0.4);
     margin: 0 auto;
     background: $backgroundColor;
     min-height: 100vh;
@@ -145,7 +146,7 @@ nav {
 .profile-banner {
     width: 100%;
     height: 200px;
-    background-image: url('https://konachan.net/image/ba9d17585bb39e381b2b24eb92bda10e/Konachan.com%20-%20268041%20aqua_eyes%20duoladameng%20headband%20horns%20kanna_kamui%20kobayashi-san_chi_no_maid_dragon%20loli%20long_hair%20purple_hair%20tail%20thighhighs.jpg');
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnBodxq7fClA%2Fmaxresdefault.jpg&f=1&nofb=1');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -191,8 +192,7 @@ nav {
     }
 
     button.edit-save {
-        align-self: flex-end;
-        margin-right: 20px;
+        margin-left: 21em;
         padding: 5px 10px;
         outline: none;
         border: none;
@@ -219,7 +219,8 @@ nav {
             margin-top: 20px;
             position: relative;
             background: $categoryColor;
-            border: 2px white solid;
+            // border: 2px white solid;
+            border-radius: 5px;
             padding: 5px 0;
             width: 20em;
             align-self: center;
