@@ -15,6 +15,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -278,5 +283,106 @@ nav ul .fa {
   border-bottom: 2px solid #E0FBFC;
   padding-bottom: 30px;
   margin-bottom: 20px;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container .modal {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 200px;
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  min-height: 150px;
+}
+
+.modal-container .modal input {
+  margin: 5px 0;
+}
+
+.modal-container .modal input:focus {
+  outline: none;
+}
+
+.modal-container .modal button.close-btn {
+  background: white;
+  border: none;
+}
+
+.modal-container .modal .fa-times {
+  color: #3D5A80;
+}
+
+.modal-container .modal .fa-times:hover {
+  color: red;
+}
+
+.modal-container .modal-content {
+  margin: 5px 10px;
+  color: #293241;
+}
+
+.modal-container .modal .accept-btn, .modal-container .modal .decline-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background: #4a8a4a;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.modal-container .modal .accept-btn, .modal-container .modal .decline-btn:hover {
+  cursor: pointer;
+}
+
+.modal-container .modal .decline-btn {
+  background: #c05041;
+}
+
+.modal-container.active {
+  display: block;
+}
+
+@-webkit-keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=profile_layout.css.map */
