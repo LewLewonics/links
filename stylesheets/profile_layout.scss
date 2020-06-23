@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    background: $bioColor;
+    background: $backgroundColor;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -27,15 +27,18 @@ button {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     background: $backgroundColor;
     min-height: 100vh;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
 }
 
 nav {
     padding-top: 10px;
-    margin-bottom: 20px;
+    background-color: $bioColor;
+    border-bottom: 2px solid white;
     ul {
         position: relative;
         width: 100%;
@@ -76,11 +79,11 @@ nav {
     width: 300px;
     height: 100vh;
     // background: rgba(255,255,255,0.9);
-    background: $categoryColor;
+    background: $backgroundColor;
     color: White;
     z-index: 100;
     transition: all .3s ease-in;
-    animation-name: modalopen;
+    animation-name: opacityAnimation;
     animation-duration: $modal-duration;
 
     .top {
@@ -139,19 +142,31 @@ nav {
     }
 }
 
+.profile-banner {
+    width: 100%;
+    height: 250px;
+    background-image: url('https://konachan.net/image/ba9d17585bb39e381b2b24eb92bda10e/Konachan.com%20-%20268041%20aqua_eyes%20duoladameng%20headband%20horns%20kanna_kamui%20kobayashi-san_chi_no_maid_dragon%20loli%20long_hair%20purple_hair%20tail%20thighhighs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px white solid;
+
+}
+
 .profile-info {
-    margin: 15px 20px;
     display: flex;
-    align-items: center;
     .profile-container {
         text-align: center;
         img {
+            margin: -62.5px 20px 15px 20px;
+            border: 4px solid white;
             border-radius: 50%;
             width: 125px;
             height: 125px;
         }
     }
     p {
+        margin: 10px 20px 15px -30px;
         font-size: 0.8em;
         margin-left: 50px;
         padding: 20px;
@@ -170,7 +185,8 @@ nav {
     align-items: center;
 
     h1 {
-     font-size: 3em;
+     font-size: 2.4em;
+     text-shadow: 0px 3px black;
      margin: 10px 0 30px 0;  
     }
 
@@ -203,6 +219,7 @@ nav {
             margin-top: 20px;
             position: relative;
             background: $categoryColor;
+            border: 2px white solid;
             padding: 5px 0;
             width: 20em;
             align-self: center;
@@ -333,7 +350,7 @@ nav {
         transform: translate(-50%, -50%);
         max-width: 100%;
         width: 200px;
-        animation-name: modalopen;
+        animation-name: opacityAnimation;
         animation-duration: $modal-duration;
         min-height: 150px;
         input {
@@ -382,7 +399,7 @@ nav {
     display: block;
 }
 
-@keyframes modalopen {
+@keyframes opacityAnimation {
     from {
         opacity: 0;
     }
