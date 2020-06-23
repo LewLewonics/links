@@ -200,6 +200,10 @@ nav ul .fa {
   overflow-y: auto;
 }
 
+.profile-info .user-name {
+  margin-top: -10px;
+}
+
 .link-container {
   position: relative;
   display: -webkit-box;
